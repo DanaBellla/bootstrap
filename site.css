@@ -1,0 +1,76 @@
+:root {
+    --ink: #3b2018;
+    --muted: #80665b;
+    --wine: #6f1d2f;
+    --gold: #bd8738;
+    --cream: #fffaf1;
+    --panel: rgba(255, 250, 241, .95);
+    --line: #ead8c0;
+}
+
+body {
+    background: #f5ede1;
+    background-image: radial-gradient(rgba(111, 29, 47, .08) 1px, transparent 1px);
+    background-size: 18px 18px;
+    color: var(--ink);
+    min-height: 100vh;
+}
+
+.navbar-restaurant {
+    background: var(--wine);
+    box-shadow: 0 .35rem 1rem rgba(59, 32, 24, .16);
+}
+
+.navbar-brand {
+    color: var(--cream);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.35rem;
+    letter-spacing: .03em;
+}
+
+.navbar-brand:hover, .navbar-brand:focus { color: #f2d59d; }
+.navbar-restaurant .nav-link { color: rgba(255, 250, 241, .82); font-size: .9rem; }
+.navbar-restaurant .nav-link:hover, .navbar-restaurant .nav-link:focus { color: #fff; }
+.btn-reservation { background: var(--gold); border: 0; color: #fff; font-weight: 700; }
+.btn-reservation:hover, .btn-reservation:focus { background: #d29a45; color: #fff; }
+
+.jumbotron-custom {
+    background: linear-gradient(120deg, #6f1d2f, #8d3040 52%, #b56d36);
+    border: 1px solid rgba(255, 250, 241, .35);
+    border-radius: .5rem;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(111, 29, 47, .2);
+    overflow: hidden;
+}
+
+.layout-block {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: .5rem;
+    min-height: 150px;
+    padding: 1.5rem;
+    transition: transform .2s ease, border-color .2s ease;
+}
+.layout-block:hover { border-color: var(--gold); transform: translateY(-4px); }
+.layout-block h2 { color: var(--wine); font-family: Georgia, 'Times New Roman', serif; font-size: 1.45rem; }
+.layout-block p { color: var(--muted); }
+.section-label { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.text-link { color: var(--wine); font-weight: 700; text-decoration: none; }
+.text-link:hover { color: var(--gold); }
+.feature-image { width: 100%; height: 190px; object-fit: cover; border-radius: .35rem; }
+.page-hero { padding: 4rem 2rem; }
+.page-hero h1 { font-family: Georgia, 'Times New Roman', serif; }
+.menu-price { color: var(--wine); font-weight: 700; white-space: nowrap; }
+
+.site-footer { background: #351b18; color: #f8ead7; margin-top: 4rem; }
+.footer-brand { color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: 1.5rem; }
+.footer-heading { color: #d9aa62; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.footer-copy { color: #cbb8a8; line-height: 1.7; }
+.site-footer a { color: #f8ead7; display: block; margin-bottom: .55rem; text-decoration: none; }
+.site-footer a:hover { color: #d9aa62; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.15); color: #a99384; display: flex; font-size: .85rem; justify-content: space-between; }
+
+@media (max-width: 575px) {
+    .jumbotron-custom { padding: 2rem !important; }
+    .footer-bottom { flex-direction: column; gap: .5rem; }
+}

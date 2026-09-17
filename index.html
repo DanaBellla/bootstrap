@@ -5,141 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maison Savoureuse | Restaurante</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --ink: #3b2018;
-            --muted: #80665b;
-            --wine: #6f1d2f;
-            --gold: #bd8738;
-            --cream: #fffaf1;
-            --panel: rgba(255, 250, 241, .94);
-            --line: #ead8c0;
-        }
-
-        body {
-            background-color: #f5ede1;
-            background-image: radial-gradient(rgba(111, 29, 47, .08) 1px, transparent 1px);
-            background-size: 18px 18px;
-            color: var(--ink);
-            min-height: 100vh;
-        }
-
-        .navbar-restaurant {
-            background: var(--wine);
-            box-shadow: 0 .35rem 1rem rgba(59, 32, 24, .16);
-        }
-
-        .navbar-brand {
-            color: #fffaf1;
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 1.35rem;
-            letter-spacing: .03em;
-        }
-
-        .navbar-brand:hover,
-        .navbar-brand:focus {
-            color: #f2d59d;
-        }
-
-        .navbar-restaurant .nav-link {
-            color: rgba(255, 250, 241, .82);
-            font-size: .9rem;
-        }
-
-        .navbar-restaurant .nav-link:hover,
-        .navbar-restaurant .nav-link:focus {
-            color: #fff;
-        }
-
-        .btn-reservation {
-            background: var(--gold);
-            border: 0;
-            color: #fff;
-            font-weight: 700;
-        }
-
-        .btn-reservation:hover,
-        .btn-reservation:focus {
-            background: #d29a45;
-            color: #fff;
-        }
-
-        .jumbotron-custom {
-            background: linear-gradient(120deg, #6f1d2f, #8d3040 52%, #b56d36);
-            border: 1px solid rgba(255, 250, 241, .35);
-            border-radius: .5rem;
-            color: white;
-            box-shadow: 0 1rem 2rem rgba(111, 29, 47, .2);
-        }
-
-        .layout-block {
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: .5rem;
-            min-height: 150px;
-            padding: 1.5rem;
-            transition: transform .2s ease, border-color .2s ease;
-        }
-
-        .layout-block:hover {
-            border-color: var(--gold);
-            transform: translateY(-4px);
-        }
-
-        .content-highlight {
-            animation: highlight-content 1.2s ease-in-out 2;
-        }
-
-        @keyframes highlight-content {
-            0%, 100% {
-                box-shadow: 0 0 0 rgba(189, 135, 56, 0);
-            }
-            50% {
-                border-color: var(--gold);
-                box-shadow: 0 0 0 .35rem rgba(189, 135, 56, .3), 0 0 2rem rgba(189, 135, 56, .5);
-            }
-        }
-
-        .layout-block h2 {
-            color: var(--wine);
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 1.25rem;
-        }
-
-        .layout-block p {
-            color: var(--muted);
-            margin-bottom: 0;
-        }
-
-        .section-label {
-            color: var(--gold);
-            font-size: .75rem;
-            font-weight: 700;
-            letter-spacing: .16em;
-            text-transform: uppercase;
-        }
-
-        .score {
-            color: var(--wine);
-            font-size: .9rem;
-            font-weight: 700;
-        }
-
-    </style>
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-restaurant" aria-label="Navegação principal">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">Maison Savoureuse</a>
+            <a class="navbar-brand" href="index.html">Maison Savoureuse</a>
             <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#especialidades">Especialidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#historia">Nossa história</a></li>
-                    <li class="nav-item ms-lg-2"><a class="btn btn-reservation btn-sm px-3" href="#reservas">Reservar mesa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Nossa história</a></li>
+                    <li class="nav-item ms-lg-2"><a class="btn btn-reservation btn-sm px-3" href="reservas.html">Reservar mesa</a></li>
                 </ul>
             </div>
         </div>
@@ -150,9 +30,10 @@
         <div class="row mb-4">
             <div class="col-12">
                 <section class="jumbotron-custom p-5" id="inicio">
-                    <p class="text-uppercase small fw-bold mb-2">Maison Savoureuse // Coluna 12</p>
+                    <p class="text-uppercase small fw-bold mb-2">Maison Savoureuse // desde 2014</p>
                     <h1 class="display-4 fw-bold">Sabores que ficam na memória</h1>
                     <p class="lead mb-0">Cozinha autoral, ingredientes da estação e o prazer de comer bem.</p>
+                    <a class="btn btn-light mt-4" href="cardapio.html">Conheça o cardápio</a>
                 </section>
             </div>
         </div>
@@ -161,28 +42,30 @@
         <div class="row g-4 mb-4">
             <div class="col-12 col-md-6">
                 <section class="layout-block h-100">
-                    <p class="section-label mb-2">Coluna 6 // Menu</p>
-                    <h2 id="cardapio">Menu degustação</h2>
+                    <img class="feature-image mb-4" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85" alt="Prato autoral colorido servido em uma mesa elegante">
+                    <p class="section-label mb-2">Experiência da casa</p>
+                    <h2>Menu degustação</h2>
                     <p>Uma sequência especial em cinco etapas, criada para revelar a identidade da nossa cozinha.</p>
-                    <p class="score mt-3">R$ 189 por pessoa</p>
+                    <a class="text-link mt-3 d-inline-block" href="cardapio.html">Ver pratos e valores &rarr;</a>
                 </section>
             </div>
             <div class="col-12 col-md-6">
                 <section class="layout-block h-100">
-                    <p class="section-label mb-2">Coluna 6 // Reservas</p>
-                    <h2 id="reservas">Uma mesa para você</h2>
+                    <img class="feature-image mb-4" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85" alt="Interior acolhedor do restaurante com mesas postas">
+                    <p class="section-label mb-2">No seu tempo</p>
+                    <h2>Uma mesa para você</h2>
                     <p>Jantares tranquilos, encontros especiais e celebrações com atendimento próximo.</p>
-                    <p class="score mt-3">Quarta a domingo, das 19h às 23h</p>
+                    <a class="text-link mt-3 d-inline-block" href="reservas.html">Faça sua reserva &rarr;</a>
                 </section>
             </div>
         </div>
 
-        <!-- Linha 3: três colunas de tamanho 4. -->//bemmmmss
+        <!-- Linha 3: três colunas de tamanho 4. -->
         <div class="row g-4 mb-4">
             <div class="col-12 col-md-4">
                 <section class="layout-block h-100">
                     <p class="section-label mb-2">Coluna 4 // 01</p>
-                    <h2 id="especialidades">Da terra</h2>
+                    <h2>Da terra</h2>
                     <p>Legumes, folhas e raízes escolhidos de pequenos produtores locais.</p>
                 </section>
             </div>
@@ -207,7 +90,7 @@
             <div class="col-12 col-md-4">
                 <section class="layout-block h-100">
                     <p class="section-label mb-2">Coluna 4 // Chef</p>
-                    <h2 id="historia">Nossa história</h2>
+                    <h2>Nossa história</h2>
                     <p>Uma cozinha de família que cresceu sem perder o cuidado de cada receita.</p>
                 </section>
             </div>
@@ -221,31 +104,21 @@
         </div>
     </main>
 
+    <footer class="site-footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <p class="footer-brand mb-2">Maison Savoureuse</p>
+                    <p class="footer-copy">Uma casa para comer devagar, celebrar o presente e voltar pelas boas lembranças.</p>
+                </div>
+                <div class="col-6 col-lg-2"><p class="footer-heading">Explore</p><a href="cardapio.html">Cardápio</a><a href="especialidades.html">Especialidades</a></div>
+                <div class="col-6 col-lg-2"><p class="footer-heading">Casa</p><a href="historia.html">Nossa história</a><a href="reservas.html">Reservas</a></div>
+                <div class="col-lg-3"><p class="footer-heading">Visite</p><p class="footer-copy">Rua das Acácias, 88<br>Pinheiros, São Paulo</p><p class="footer-copy">(11) 3020-1940</p></div>
+            </div>
+            <div class="footer-bottom mt-4 pt-4"><span>© 2024 Maison Savoureuse</span><span>Quarta a domingo · 19h às 23h</span></div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelectorAll('.navbar a[href^="#"]').forEach((link) => {
-            link.addEventListener('click', (event) => {
-                const target = document.querySelector(link.getAttribute('href'));
-
-                if (!target) {
-                    return;
-                }
-
-                event.preventDefault();
-                const contentBlock = target.closest('.layout-block') || target;
-                contentBlock.classList.remove('content-highlight');
-                contentBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                window.history.replaceState(null, '', link.getAttribute('href'));
-
-                requestAnimationFrame(() => {
-                    contentBlock.classList.add('content-highlight');
-                });
-
-                contentBlock.addEventListener('animationend', () => {
-                    contentBlock.classList.remove('content-highlight');
-                }, { once: true });
-            });
-        });
-    </script>
 </body>
 </html>
